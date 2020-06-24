@@ -2,8 +2,8 @@ const csvtojson = require('csvtojson')
 const path = require('path')
 const fs = require('fs')
 
-const csvPath = path.join(__dirname, 'customer-data.csv')
-const jsonOutPath = path.join(__dirname, 'customer-data.json')
+const csvPath = path.join(__dirname, '../data/input-data.csv')
+const jsonOutPath = path.join(__dirname, '../output/output-data.json')
 
 csvtojson()
     .fromFile(csvPath)
